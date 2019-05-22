@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int putere(int a, int b)
+{
+
+    if(b==0)
+        return 1;
+    else if(b==1)
+        return a;
+    else
+        return a*putere(a, b-1);
+}
+int main()
+{
+    int a, b;
+    printf("a=");
+    scanf("%d", &a);
+    printf ("b=");
+    scanf("%d", &b);
+    printf("%d", putere(a, b));
+    return 0;
+}
