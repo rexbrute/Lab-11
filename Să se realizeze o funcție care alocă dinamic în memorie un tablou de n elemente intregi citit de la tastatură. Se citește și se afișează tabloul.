@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+
+void tablou(int n,int i,int *a){
+a = calloc(n, sizeof(int));
+  printf("Componente vector: \n");
+  for (i = 0; i < n; i++) {
+    scanf("%d", &a[i]);
+  }
+  for (i = 0; i < n; i++) {
+    printf("%d ",a[i]);
+  }
+  free(a);
+}
+
+int main(void)
+{
+  int n,i;
+  int *a;
+
+  printf("n = ");
+  scanf("%d", &n);
+
+  tablou(n,i,*a);
+
+  return 0;
+}
